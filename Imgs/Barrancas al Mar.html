@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="es" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrancas al Mar</title>
+    
+    
+<link rel="stylesheet" href="./Barrancas al Mar_files/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="./Barrancas al Mar_files/estilos.css"></head>
+<body>
+    <!-- Logo + menú navegable -->
+
+    <header>
+        <div class="logoBaM">
+            <a href="http://127.0.0.1:5500/index.html#default" class="logo">
+                <img src="./Barrancas al Mar_files/logobarrancassinfondo.png" width="90px" height="90px">
+            </a>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a class="active" href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/departamentos.html">Departamentos</a></li>
+                <li><a href="http://127.0.0.1:5500/servicios.html">Servicios</a></li>
+                <li><a href="http://127.0.0.1:5500/puertomadryn.html">Puerto Madryn</a></li>
+                <li><a href="http://127.0.0.1:5500/contacto.html">Contacto</a></li>
+                <button>
+                    <a class="Boton" href="http://127.0.0.1:5500/contacto.html">Reservá Ahora</a>
+                </button> 
+            </ul>
+        </nav>
+    </header>
+    <!-- Cierre header navegable -->
+<br>
+<br>
+<!-- Slider con imágenes de los departamentos y el complejo -->
+    <main>
+        <div class="call"> 
+        <h1>Conocé Puerto Madryn</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consectetur amet ipsa? Nostrum tempore iste illo ratione pariatur molestias eligendi vero enim commodi, facilis quis vel dignissimos nulla ad impedit nam. Provident similique, nam beatae, ad aperiam minima, consectetur sed cupiditate atque maxime eos ipsa pariatur reiciendis eligendi? Itaque, adipisci.</p>
+        <a href="http://127.0.0.1:5500/index.html#">Más Info</a>
+        </div>
+        <div class="carrusel-home">
+            <img src="./Barrancas al Mar_files/departamentos.JPG" alt="Departamentos" height="500" width="70%">
+        </div>
+    </main>
+<!-- Fin slider -->
+    <h2></h2>
+    <section></section>
+    <h2></h2>
+    <section></section>
+    <h2></h2>
+    <section></section>
+    <h2></h2>
+    <section></section>
+
+    <footer id="PieBarrancas">
+        <p>Todos los derechos reservados a Barrancas al Mar</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/search/top?q=barrancas%20al%20mar">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/5492804312755">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://goo.gl/maps/BAQ3SUo2VyjS6DDG7">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+        </div>
+    </footer>    
+    <a href="http://127.0.0.1:5500/index.html#" class="subir">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

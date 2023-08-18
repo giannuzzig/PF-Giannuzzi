@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/*reseteo con selector universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.size{
+    font-size: 50px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+header{
+    height: 80px;
+    border: 5px black;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: aqua;
+}
+
+header a.active{
+    background-color: #012e4043;
+    color: #038C8C;
+    padding: 10px 20px;
+}
+.logo{
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logoBaM{
+    float: left;
+    text-align: center;
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul{
+    list-style: none;
+    }
+
+.barra ul li{
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: black;
+}
+
+.barra a:hover{
+    color: #038C8C;
+}
+
+main{
+    height: calc(100vh-80px);
+    width: 100%;
+}
+
+.call{
+    width: 50%;
+    height: 200px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.call h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.carrusel-hoome{
+    width: 50%;
+    height: 200px;
+}
+footer{
+    background-color: #012e40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.redes{
+    color: #038C8C;
+    font-size: 30px;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: #038C8C;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 0 5px #fff;
+}
