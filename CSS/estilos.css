@@ -175,6 +175,16 @@ overflow: hidden;
 position: relative;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #03A696; 
+}
+
+
+.carousel-indicators button {
+    background-color: #03A696; /
+}
+
 .masinfo{
     position: absolute;
     top: 50%; 
@@ -407,6 +417,9 @@ input[type="reset"] {
     height: 600px;
     width: 400px;
     border: 2px solid #000;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
 }
 
 .card__img{
@@ -426,8 +439,7 @@ input[type="reset"] {
 .card__desc{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 15px 
-    
+    padding: 15px  
 }
 
 .card__boton{
@@ -444,6 +456,7 @@ input[type="reset"] {
 .card__boton:hover{
     color: #03A696;
     background-color: #012e40;
+    margin-bottom: 0px;
 }
 
 .card2__img{
@@ -463,8 +476,7 @@ input[type="reset"] {
 .card2__desc{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 15px 
-    
+    padding: 15px    
 }
 
 .card2__boton{
@@ -473,6 +485,7 @@ input[type="reset"] {
     background-color: #03A696;
     font-weight: bold;
     padding: 10px 20px;
+    margin-bottom: 0px;
     width: 100%;
     display: inline-block;
     text-align: center;
