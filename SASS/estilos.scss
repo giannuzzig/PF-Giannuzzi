@@ -2,762 +2,796 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200,300,400,500,600,700&family=Roboto:ital,wght@0,1000,3000,4000,5000,7000,9001,1001,3001,4001,5001,7001,900&display=swap');
 
 
-/* font-family: 'Roboto', sans-serif */
-/*font-family: 'Oswald', sans-serif
-font-family: 'Roboto', sans-serif*/
+/* font-family: 'Roboto', sans-serif; */
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+//colores
+$color1: #03A696;
+$color2: #012e40;
+
+//fuentes
+$font1: 'Roboto', sans-serif;
+$font2: 'Oswald', sans-serif;
 
 /* Reseteo con selector universal */
 
-margin: 0
-font-family: 'Roboto', sans-serif
-box-sizing: border-box
+* {
+    margin: 0;
+    font-family: $font1;
+    box-sizing: border-box;
+}
 
+.navbar {
+    /* height: 120px; */
+    background-color: $color1;
+    text-transform: uppercase;
+    color: #fff !important;
+}
 
-.navbar
-    /* height: 120px */
-    background-color: #03A696
-    text-transform:uppercase
-    color: #fff !important
+.logo-navbar {
+    height: 100px;
+}
 
+body {
+    margin: 0;
+    font-family: $font1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
-.logo-navbar
-    height: 100px
+main {
+    height: calc(100vh - 80px);
+    width: 100%;
+    /* margin-left: 50px;
+    margin-right: 20px; */
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+}
 
+h2 {
+    font-family: $font2;
+}
 
-body 
-    margin: 0
-    font-family: 'Roboto', sans-serif
-    box-sizing: border-box
-    display: flex
-    flex-direction: column
-    min-height: 100vh
-    overflow-x: hidden
+html {
+    scroll-behavior: smooth;
+}
 
+.size {
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+}
 
-main 
-    height: calc(100vh - 80px)
-    width: 100%
-    /* margin-left: 50px
-    margin-right: 20px */
-    flex: 1
-    padding: 20px
-    overflow: auto
-
-
-h2
-    font-family: 'Oswald', sans-serif
-
-
-html 
-    scroll-behavior: smooth
-
-
-.size 
-    font-size: 50px
-    text-align: left
-    margin: 0
-
-
-/* header 
-    margin-top: 0
-    height: 100px
-    width: 100%
-    padding: 30px 100px
-    text-align: center
-    text-transform:uppercase
-    font-size: 20px
-    position: static
-    background-color: #03A696
-    color: #fff
+/* header {
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+    padding: 30px 100px;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 20px;
+    position: static;
+    background-color: $color1;
+    color: #fff;
     
 
- */
+} */
 
-.barra 
-    float: right
+.barra {
+    float: right;
+}
 
+.barra ul {
+    list-style: none;
+    align-items: center;
+}
 
-.barra ul 
-    list-style: none
-    align-items: center
+.barra ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
 
+.barra a {
+    text-decoration: none;
+    color: black;
+}
 
-.barra ul li 
-    display: inline-block
-    margin-right: 20px
+.barra a:hover {
+    color: #fff;
+}
 
-
-.barra a 
-    text-decoration: none
-    color: black
-
-
-.barra a:hover 
-    color: #fff
-
-
-.barra ul button 
-    padding: 10px
-    text-transform: uppercase
-    font-size: 20px
-    border: 2px solid black
-    border-radius: 5px
-    background: none
-    cursor: pointer
-
+.barra ul button {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
 
 .barra ul button:hover,
-.barra ul button:focus 
-    outline: none
-    background: #000
-    color: #fff
+.barra ul button:focus {
+    outline: none;
+    background: #000;
+    color: #fff;
+}
 
+.logo {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    margin-top: -25px;
+}
 
-.logo 
-    float: left
-    font-weight: bold
-    text-transform: uppercase
-    vertical-align: middle
-    padding-bottom: 30px
-    margin-top: -25px
+.call {
+    height: 200px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
 
+.call h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-.call 
-    height: 200px
-    color: black
-    padding: 20px
-    margin: 30px
-    text-align: center
+.call p {
+    margin-bottom: 20px;
+}
 
+.call a {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
 
-.call h1 
-    font-weight: bold
-    margin-bottom: 20px
-
-
-.call p 
-    margin-bottom: 20px
-
-
-.call a 
-    background-color: black
-    color: #fff
-    text-decoration: none
-    padding: 10px 20px
-
-
-/* .carousel-slide
-height: 500px
-width: auto
-background-size: cover
-background-position: center
-
-.d-block
-    height: 400px
-    background-size: cover
-    background-position: center
- */
+/* .carousel-slide{
+height: 500px;
+width: auto;
+background-size: cover;
+background-position: center;
+}
+.d-block{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+} */
 
 /* ... Your existing CSS ... */
 
-.carousel-item
-    position: relative 
+.carousel-item {
+    position: relative;
+}
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
 
-.image-container
-    position: relative
-    display: inline-block
-
-
-.carrusel-item
-max-height: 400px
-overflow: hidden
-position: relative
-
+.carrusel-item {
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon 
-    background-color: #03A696 
+.carousel-control-next-icon {
+    background-color: $color1;
+}
 
 
+.carousel-indicators button {
+    background-color: $color1;
+}
 
-.carousel-indicators button 
-    background-color: #03A696 /
+.masinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    max-width: 70%;
+    opacity: 0.9;
+}
 
+.botonmasinfo {
+    height: 200px;
+    background-color: white;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
 
-.masinfo
-    position: absolute
-    top: 50% 
-    left: 50% 
-    transform: translate(-50%, -50%) 
-    padding: 20px
-    background-color: rgba(0, 0, 0, 0.7)
-    color: white
-    text-align: center
-    max-width: 70% 
-    opacity: 0.9 
+.botonmasinfo:hover {
+    color: #038C8C;
+}
 
+.servicios ul li {
+    display: inline-block;
+}
 
-.botonmasinfo
-    height: 200px
-    background-color: white
-    text-decoration: none
-    color: #000
-    font-weight: bold
-    margin-top: 20px
-    padding: 10px
-    text-align: center
+form {
+    margin: 50px auto;
+    width: 600px;
+    background-color: $color2;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
 
-
-.botonmasinfo:hover
-    color: #038C8C
-
-
-.servicios ul li 
-    display: inline-block
-
-
-form 
-    margin: 50px auto
-    width: 600px
-    background-color: #012e40
-    padding: 30px
-    border-radius: 10px
-    color: #fff
-
+form textarea{
+    width: 100%;
+    }
 
 form input,
-form textarea 
-    width: 100%
-    margin-bottom: 20px
-    padding-right: 10px
-    padding: 5px
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding: 5px;
+}
 
+form select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding: 5px;
+}
 
-form select
-    width: 100%
-    margin-bottom: 20px
-    padding-right: 10px
-    padding: 5px 
+form textarea{
+width: 100%;
+}
 
+.contactHeader {
+    background-color: $color2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
 
-.contactHeader
-    background-color: #012e40
-    text-align: center
-    padding-top: 20px
-    padding-bottom: 20px
-    margin: 0
-    color: #fff
-    font-weight: bold
-    font-size: 25px
+input:focus {
+    box-shadow: #fff;
+}
 
+input[type="submit"] {
+    width: auto;
+    text-align: center;
+    background-color: #038C8C;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-input:focus
-    box-shadow: #fff
+input[type="reset"] {
+    width: auto;
+    text-align: center;
+    background-color: #F5F5F5;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-
-input[type="submit"] 
-    width: auto
-    text-align: center
-    background-color: #038C8C
-    font-weight: bold
-    color: #fff
-    border: none
-    padding: 10px 20px
-    border-radius: 5px
-    cursor: pointer
-
-
-input[type="reset"] 
-    width: auto
-    text-align: center
-    background-color: #F5F5F5
-    color: #000
-    border: none
-    padding: 10px 20px
-    border-radius: 5px
-    cursor: pointer
-
-
-.galeria
-    display: grid
-    /*height: 600px*/
-    width: 100%
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(3, 180px)
+.galeria {
+    display: grid;
+    /*height: 600px;*/
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 180px);
     grid-template-areas: "img1 img2 img3 img3"
-                        "img1 img4 img5 img6"
-                        "img7 img4 img8 img8"
-    grid-gap: 15px
-    padding: 15px
-    justify-content: center
-    align-content: center
+        "img1 img4 img5 img6"
+        "img7 img4 img8 img8";
+    grid-gap: 15px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+}
 
+.item {
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    transition: all 0.9s;
 
-.item
-    border: 2px solid #000
-    background-size: cover
-    background-position: center
-    border-radius: 15px
-    transition: all 0.9s
+}
 
-
-
-.item:hover
+.item:hover {
     transform: scale(1.08)
-
-
-.item1
-    background-image: url(../Imágenes/bicis.jpeg)
-    grid-area: img1
-
-
-.item2
-    background-image: url(../Imágenes/parrilla.jpg)
-    grid-area: img2
-
-
-.item3
-    background-image: url(../Imágenes/vista\ al\ mar.JPG)
-    grid-area: img3
-
-
-.item4
-    background-image: url(../Imágenes/jardin.JPG)
-    grid-area: img4
-
-
-.item5
-    background-image: url(../Imágenes/vistamar.JPG)
-    grid-area: img5
-
-
-.item6
-    background-image: url(../Imágenes/departamentos.JPG)
-    grid-area: img6
-
-
-.item7
-    background-image: url(../Imágenes/jardin\ noche.jpg)
-    grid-area: img7
-
-
-.item8
-    background-image: url(../Imágenes/mar.jpeg)
-    grid-area: img8
-
-
-.galeriamadryn
-    /*height: 600px*/
-    width: 100%
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(2, 200px)
-    justify-content: center
-    align-content: center
-
-
-.foto
-    border: 2px solid black
-    background-size: cover
-    background-position: center
-
-
-.foto1
-    background-image: url(../Imágenes/pinguino.jpg)
-    grid-column: 1/2
-    grid-row: 1/3
-
-
-.foto2
-    background-image: url(../Imágenes/playa.jpg)
-    grid-column: 2/3
-    grid-row: 1/2
-
-
-.foto3
-    background-image: url(../Imágenes/ecocentro.jpg)   
-    grid-column: 3/4
-    grid-row: 1/2
-
-
-.foto4
-    background-image: url(../Imágenes/ballenafrancaaustral.jpg)
-    grid-column: 4/5
-    grid-row: 1/3
-
-
-.foto5
-    background-image: url(../Imágenes/lobos.jpg)
-    grid-column: 2/3
-    grid-row: 2/3
-
-
-.foto6
-    background-image: url(../Imágenes/ballenaycormoran.jpg)
-    grid-column: 3/4
-    grid-row: 2/3
-
-
-.mapapuertomadryn
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 100vh
-    margin: 0 auto
-
-
-.contenedor
-    display: flex
-    justify-content: space-evenly
-    flex-wrap: wrap
-
-
-.card
-    height: 600px
-    width: 400px
-    border: 2px solid #000
-    margin-bottom: 0px
-    padding-bottom: 0px
-    box-sizing: border-box
-
-
-.card__img
-    height: 400px
-    width: 100%
-    background-image: url(../Imágenes/vista\ al\ mar.JPG)
-    background-size: cover
-    background-position: center
-
-
-.card__title
-    text-align: center
-    font-family: 'Oswald', sans-serif
-    margin-top: 15px
-
-
-.card__desc
-    font-family: 'Roboto', sans-serif
-    text-align: center
-    padding: 15px  
-
-
-.card__boton
-    text-decoration: none
-    color: #012e40
-    background-color: #03A696
-    font-weight: bold
-    padding: 10px 20px
-    width: 100%
-    display: inline-block
-    text-align: center
-
-
-.card__boton:hover
-    color: #03A696
-    background-color: #012e40
-    margin-bottom: 0px
-
-
-.card2__img
-    height: 400px
-    width: 100%
-    background-image: url(../Imágenes/estudio.jpeg)
-    background-size: cover
-    background-position: center
-
-
-.card2__title
-    text-align: center
-    font-family: 'Oswald', sans-serif
-    margin-top: 15px
-
-
-.card2__desc
-    font-family: 'Roboto', sans-serif
-    text-align: center
-    padding: 15px    
-
-
-.card2__boton
-    text-decoration: none
-    color: #012e40
-    background-color: #03A696
-    font-weight: bold
-    padding: 10px 20px
-    margin-bottom: 0px
-    width: 100%
-    display: inline-block
-    text-align: center
-
-
-.card2__boton:hover
-    color: #03A696
-    background-color: #012e40
-
-
-
-footer 
-    background-color: #012e40
-    color: #fff
-    text-align: center
-    padding: 20px
-    font-size: 15px
-
-
-.redes 
-    color: #038C8C
-    font-size: 30px
-    color: #fff
-    letter-spacing: 10px
-
-
-footer a
-    color: #038C8C
-
-
-footer a:hover
-    color: #fff
-
-
-.subir 
-    height: 40px
-    width: 40px
-    background-color: #038C8C
-    color: #fff
-    position: fixed
-    right: 40px
-    bottom: 40px
-    font-size: 25px
-    line-height: 40px
-    text-align: center
-    box-shadow: 0 0 5px #fff
-
-
-.politicaCancelacion ul 
-    list-style: circle
-
+}
+
+.item1 {
+    background-image: url(../Imágenes/bicis.jpeg);
+    grid-area: img1;
+}
+
+.item2 {
+    background-image: url(../Imágenes/parrilla.jpg);
+    grid-area: img2;
+}
+
+.item3 {
+    background-image: url(../Imágenes/vista\ al\ mar.JPG);
+    grid-area: img3;
+}
+
+.item4 {
+    background-image: url(../Imágenes/jardin.JPG);
+    grid-area: img4;
+}
+
+.item5 {
+    background-image: url(../Imágenes/vistamar.JPG);
+    grid-area: img5;
+}
+
+.item6 {
+    background-image: url(../Imágenes/departamentos.JPG);
+    grid-area: img6;
+}
+
+.item7 {
+    background-image: url(../Imágenes/jardin\ noche.jpg);
+    grid-area: img7;
+}
+
+.item8 {
+    background-image: url(../Imágenes/mar.jpeg);
+    grid-area: img8;
+}
+
+.galeriamadryn {
+    /*height: 600px;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+}
+
+.foto {
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto1 {
+    background-image: url(../Imágenes/pinguino.jpg);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.foto2 {
+    background-image: url(../Imágenes/playa.jpg);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.foto3 {
+    background-image: url(../Imágenes/ecocentro.jpg);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.foto4 {
+    background-image: url(../Imágenes/ballenafrancaaustral.jpg);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.foto5 {
+    background-image: url(../Imágenes/lobos.jpg);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.foto6 {
+    background-image: url(../Imágenes/ballenaycormoran.jpg);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.mapapuertomadryn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 600px;
+    width: 400px;
+    border: 2px solid #000;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.card__img {
+    height: 400px;
+    width: 100%;
+    background-image: url(../Imágenes/vista\ al\ mar.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__title {
+    text-align: center;
+    font-family: $font2;
+    margin-top: 15px;
+}
+
+.card__desc {
+    font-family: $font1;
+    text-align: center;
+    padding: 15px
+}
+
+.card__boton {
+    text-decoration: none;
+    color: $color2;
+    background-color: $color1;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.card__boton:hover {
+    color: $color1;
+    background-color: $color2;
+    margin-bottom: 0px;
+}
+
+.card2__img {
+    height: 400px;
+    width: 100%;
+    background-image: url(../Imágenes/estudio.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card2__title {
+    text-align: center;
+    font-family: $font2;
+    margin-top: 15px;
+}
+
+.card2__desc {
+    font-family: $font1;
+    text-align: center;
+    padding: 15px
+}
+
+.card2__boton {
+    text-decoration: none;
+    color: $color2;
+    background-color: $color1;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.card2__boton:hover {
+    color: $color1;
+    background-color: $color2;
+}
+
+.card,
+.card2 {
+    margin-bottom: 0;
+}
+
+.card__boton,
+.card2__boton {
+    margin-bottom: 0;
+}
+
+
+footer {
+    background-color: $color2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.redes {
+    color: $color1;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+footer a {
+    color: $color1;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $color1;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 0 5px #fff;
+}
+
+.politicaCancelacion ul {
+    list-style: circle;
+}
 
 /* comienzan las media queries */
 
-@media only screen and (min-width:480px)
+@media only screen and (min-width:480px) {
 
-    .galeriamadryn
-        grid-template-columns: repeat(2, 1fr)
-        grid-template-rows: repeat(4, 200px)
-    
-    .foto1
-        grid-column: 1/2
-        grid-row: 1/2
-    
+    .galeriamadryn {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+    }
 
-    .foto2
-        grid-column: 2/3
-        grid-row: 1/2
-    
+    .foto1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
-    .foto3
-        grid-column: 1/2
-        grid-row: 2/3
-    
+    .foto2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 
-    .foto4
-        grid-column: 2/3
-        grid-row: 2/3
-    
+    .foto3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-    .foto5
-        grid-column: 1/3
-        grid-row: 3/4
-    
+    .foto4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 
-    .foto6
-        grid-column: 1/3
-        grid-row: 4/5
-    
+    .foto5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
 
-    footer p
-        font-size: 20px
-    
-    footer i
-        font-size: 30px
-    
+    .foto6 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
 
-    .titulodestaque
-        font-size: 18px
-    
+    footer p {
+        font-size: 20px;
+    }
 
-    .masinfo
-        position: absolute
-        font-size: 12px
-        top: 50% 
-        left: 50% 
-        transform: translate(-50%, -50%) 
-        padding: 20px
-        background-color: rgba(0, 0, 0, 0.7)
-        color: white
-        text-align: center
-        max-width: 70% 
-        opacity: 0.9 
-    
-    
-    .botonmasinfo
-        height: 200px
-        font-size: 14px
-        background-color: white
-        text-decoration: none
-        color: #000
-        font-weight: bold
-        margin-top: 20px
-        padding: 10px
-        text-align: center
-    
+    footer i {
+        font-size: 30px;
+    }
+
+    .titulodestaque {
+        font-size: 18px;
+    }
+
+    .masinfo {
+        position: absolute;
+        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        max-width: 70%;
+        opacity: 0.9;
+    }
+
+    .botonmasinfo {
+        height: 200px;
+        font-size: 14px;
+        background-color: white;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+    .galeriamadryn {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .foto1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .foto2 {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .foto3 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .foto4 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .foto5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .foto6 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+    .foto7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .foto8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+
+    .titulodestaque {
+        font-size: 25px;
+    }
+
+    .masinfo {
+        position: absolute;
+        font-size: 14px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        max-width: 70%;
+        opacity: 0.9;
+    }
+
+    .botonmasinfo {
+        height: 200px;
+        font-size: 16px;
+        background-color: white;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
 
 
-@media only screen and (min-width:768px) and (max-width:1024px) 
-    
-    .galeriamadryn
-        grid-template-columns: repeat(3, 1fr)
-    
+@media only screen and (min-width:1024px) {
+    .galeriamadryn {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
 
-    .foto1
-        grid-column: 1/2
-        grid-row: 1/2
-    
+    .foto1 {
+        background-image: url(../Imágenes/pinguino.jpg);
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
 
-    .foto2
-        grid-column: 2/4
-        grid-row: 1/2
-    
+    .foto2 {
+        background-image: url(../Imágenes/playa.jpg);
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 
-    .foto3
-        grid-column: 1/3
-        grid-row: 2/3
-    
+    .foto3 {
+        background-image: url(../Imágenes/ecocentro.jpg);
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 
-    .foto4
-        grid-column: 3/4
-        grid-row: 2/3
-    
-    .foto5
-        grid-column: 1/2
-        grid-row: 3/4
-    
+    .foto4 {
+        background-image: url(../Imágenes/ballenafrancaaustral.jpg);
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
 
-    .foto6
-        grid-column: 2/4
-        grid-row: 3/4
-    
-    .foto7
-        grid-column: 1/2
-        grid-row: 4/5
-    
+    .foto5 {
+        background-image: url(../Imágenes/lobos.jpg);
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 
-    .foto8
-        grid-column: 2/4
-        grid-row: 4/5
-    
+    .foto6 {
+        background-image: url(../Imágenes/ballenaycormoran.jpg);
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
 
-    .titulodestaque
-        font-size: 25px
-    
+    .titulodestaque {
+        font-size: 30px;
+    }
 
-    .masinfo
-        position: absolute
-        font-size: 14px
-        top: 50% 
-        left: 50% 
-        transform: translate(-50%, -50%) 
-        padding: 20px
-        background-color: rgba(0, 0, 0, 0.7)
-        color: white
-        text-align: center
-        max-width: 70% 
-        opacity: 0.9 
-    
-    
-    .botonmasinfo
-        height: 200px
-        font-size: 16px
-        background-color: white
-        text-decoration: none
-        color: #000
-        font-weight: bold
-        margin-top: 20px
-        padding: 10px
-        text-align: center
-    
+    .masinfo {
+        position: absolute;
+        font-size: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        max-width: 70%;
+        opacity: 0.9;
+    }
 
-
-
-@media only screen and (min-width:1024px) 
-    .galeriamadryn
-        grid-template-columns: repeat(4, 1fr)
-        grid-template-rows: repeat(2, 200px)
-    
-
-    .foto1
-        background-image: url(../Imágenes/pinguino.jpg)
-        grid-column: 1/2
-        grid-row: 1/3
-    
-    
-    .foto2
-        background-image: url(../Imágenes/playa.jpg)
-        grid-column: 2/3
-        grid-row: 1/2
-    
-    
-    .foto3
-        background-image: url(../Imágenes/ecocentro.jpg)   
-        grid-column: 3/4
-        grid-row: 1/2
-    
-    
-    .foto4
-        background-image: url(../Imágenes/ballenafrancaaustral.jpg)
-        grid-column: 4/5
-        grid-row: 1/3
-    
-    
-    .foto5
-        background-image: url(../Imágenes/lobos.jpg)
-        grid-column: 2/3
-        grid-row: 2/3
-    
-    
-    .foto6
-        background-image: url(../Imágenes/ballenaycormoran.jpg)
-        grid-column: 3/4
-        grid-row: 2/3
-    
-
-    .titulodestaque
-        font-size: 30px
-    
-
-    .masinfo
-        position: absolute
-        font-size: 16px
-        top: 50% 
-        left: 50% 
-        transform: translate(-50%, -50%) 
-        padding: 20px
-        background-color: rgba(0, 0, 0, 0.7)
-        color: white
-        text-align: center
-        max-width: 70% 
-        opacity: 0.9 
-    
-    
-    .botonmasinfo
-        height: 200px
-        font-size: 18px
-        background-color: white
-        text-decoration: none
-        color: #000
-        font-weight: bold
-        margin-top: 20px
-        padding: 10px
-        text-align: center
-    
+    .botonmasinfo {
+        height: 200px;
+        font-size: 18px;
+        background-color: white;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
