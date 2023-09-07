@@ -55,6 +55,13 @@ main {
 
 h2 {
     font-family: $font2;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 html {
@@ -431,7 +438,6 @@ input[type="reset"] {
 }
 
 .card {
-    height: 600px;
     width: 400px;
     border: 2px solid #000;
     margin-bottom: 0px;
