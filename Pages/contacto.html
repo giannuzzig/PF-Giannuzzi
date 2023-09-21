@@ -9,14 +9,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Fin de bootstrap -->
     <meta name="description" content="Ponete en contacto con nosotros para reservar tu estadía.">
-    <meta name="keywords" content="hospedaje en puerto madryn, alojamiento puerto madry, alquiler temporario puerto madryn, departamentos puerto madryn">
+    <meta name="keywords"
+        content="hospedaje en puerto madryn, alojamiento puerto madry, alquiler temporario puerto madryn, departamentos puerto madryn">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/estilos.css">
-    <link rel="shortcut icon" href="Imágenes/favlogobarrancassinfondo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imágenes/favlogobarrancassinfondo.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- Logo + menú navegable -->
 
@@ -54,73 +56,81 @@
             </div>
         </nav>
         <!-- NavBar Bootstrap fin -->
-        <!-- <div class="ancho"></div>
-            <div class="logoBaM">
-                <a href="#default" class="logo">
-                    <img src="../Imágenes/logobarrancassinfondo.png" width="90px" height="90px">
-                </a>
-            </div>
-        <nav class="barra">
-            <ul>
-                <li><a class="active"href="./index.html">Home</a></li>
-                <li><a href="./Pages/departamentos.html">Departamentos</a></li>
-                <li><a href="./Pages/servicios.html">Servicios</a></li>
-                <li><a href="./Pages/puertomadryn.html">Puerto Madryn</a></li>
-                <li><a href="./Pages/contacto.html">Contacto</a></li>
-                <button>
-                    <a class="Boton" href="./Pages/contacto.html">Reservá Ahora</a>
-                </button> 
-            </ul>
-        </nav> -->
     </header>
     <!-- Cierre header navegable -->
     <main>
-        <h2 class="size">Contacto</h2>
-        <form action="#" method="post">
-            <h3 class="contactHeader">Ponete en contacto con nosotros</h3>
-            <br>
-            <div class="formContacto">
-                <label for="nombre">Nombre</label>
-                <input type="text">
-
+        <h1 class="size">Contacto</h1>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="#" method="post">
+                            <h2 class="contactHeader">Ponete en contacto con nosotros</h2>
+                            <br>
+                            <div class="formContacto">
+                                <label for="nombre">Nombre</label>
+                                <input type="text">
+                            </div>
+                            <div class="formContacto">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="nombre@email.com" name="email">
+                            </div>
+                            <div class="formContacto">
+                                <label for="tel">Teléfono de Contacto</label>
+                                <input type="tel" placeholder="Cod Area + Número" name="telefono"><br>
+                            </div>
+                            <div class="formContacto">
+                                <p>¿Por qué departamento querés consultar?</p>
+                                <select name="Depto" id="Depto">
+                                    <option value="Departamento con vista al mar">Seleccionar...</option>
+                                    <option value="Departamento con vista al mar">Departamento con vista al mar</option>
+                                    <option value="Estudio con Jardín">Estudio con Jardín</option>
+                                    <option value="Otras consultas">Otras Consultas</option>
+                                </select>
+                            </div>
+                            <div class="formContacto">
+                                <!-- <p>Fecha de Llegada</p> -->
+                                <label for="calendario">Fecha de Llegada</label>
+                                <input type="date" placeholder="Fecha de Llegada" name="llegada">
+                            </div>
+                            <div class="formContacto">
+                                <!-- <p>Fecha de Salida</p> -->
+                                <label for="calendario">Fecha de Salida</label>
+                                <input type="date" placeholder="Fecha de Salida" name="salida">
+                            </div>
+                            <div class="formContacto">
+                                <label for="Dejanos tu Consulta"> Dejanos tu consulta:</label>
+                                <textarea rows="5" placeholder="Escribinos"></textarea>
+                            </div>
+                            <div class="formContacto">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="InfoContacto">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>CONTACTO Y RESERVAS</h3>
+                            <h4>Barrancas al Mar es atendido por sus dueños. Si tenés cualquier consulta o duda, tanto
+                                de los departamentos como de las actividades que podés realizar en Puerto Madryn, no
+                                dudes en escribirnos. ¡Te esperamos!</h4>
+                            <br>
+                            <br>
+                            <div class="InfoBarrancasContacto">
+                                <p><i class="fa-solid fa-map-pin"></i> <a href="https://maps.app.goo.gl/xXnrMGpkn6w9oYrF8">Cooperativa
+                                Mercantil 63, Puerto Madryn, Chubut, Argentina</a></p>
+                                <p><i class="fa-solid fa-phone"></i><a href="tel:02804312755">Tel: 0280-431-2755</a></p>
+                                <p><i class="fa-solid fa-envelope"></i><a href="mailto:barrancasalmar@gmail.com">barrancasalmar@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="formContacto">
-                <label for="email">Email</label>
-                <input type="email" placeholder="nombre@email.com" name="email">
-            </div>
-            <div class="formContacto">
-                <label for="tel">Teléfono de Contacto</label>
-                <input type="tel" placeholder="Cod Area + Número" name="telefono"><br>
-            </div>
-            <div class="formContacto">
-                <p>¿Por qué departamento querés consultar?</p>
-                <select name="Depto" id="Depto">
-                    <option value="Departamento con vista al mar">Departamento con vista al mar</option>
-                    <option value="Estudio con Jardín">Estudio con Jardín</option>
-                    <option value="Otras consultas">Otras Consultas</option>
-                </select>
-            </div>
-            <div class="formContacto">
-                <!-- <p>Fecha de Llegada</p> -->
-                <label for="calendario">Fecha de Llegada</label>
-                    <input type="date" placeholder="Fecha de Llegada" name="llegada">                
-            </div>
-            <div class="formContacto">
-                <!-- <p>Fecha de Salida</p> -->
-                <label for="calendario">Fecha de Salida</label>
-                    <input type="date" placeholder="Fecha de Salida" name="salida">
-            </div>
-            <div class="formContacto">
-                <label for="Dejanos tu Consulta"> Dejanos tu consulta:</label>
-                    <textarea rows="5" placeholder="Escribinos"></textarea>
-            </div>
-            <div class="formContacto">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </div>
-        </form>
-        <br>
-        <br>
+        </section>
     </main>
     <footer>
         <p>Todos los derechos reservados a Barrancas al Mar</p>
@@ -141,4 +151,5 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
