@@ -138,6 +138,10 @@ html {
     margin-top: -25px;
 }
 
+.parrafodestaque{
+    margin-bottom: 20px;
+}
+
 .call {
     height: 200px;
     color: black;
@@ -162,20 +166,6 @@ html {
     padding: 10px 20px;
 }
 
-/* .carousel-slide{
-height: 500px;
-width: auto;
-background-size: cover;
-background-position: center;
-}
-.d-block{
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-} */
-
-/* ... Your existing CSS ... */
-
 .carousel-item {
     position: relative;
 }
@@ -196,7 +186,6 @@ background-position: center;
     background-color: $color1;
 }
 
-
 .carousel-indicators button {
     background-color: $color1;
 }
@@ -215,7 +204,7 @@ background-position: center;
 }
 
 .botonmasinfo {
-    height: 200px;
+    height: 100px;
     background-color: white;
     text-decoration: none;
     color: #000;
