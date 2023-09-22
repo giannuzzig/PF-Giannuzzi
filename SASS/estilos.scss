@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,1000,3000,4000,5000,7000,9001,1001,3001,4001,5001,7001,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200,300,400,500,600,700&family=Roboto:ital,wght@0,1000,3000,4000,5000,7000,9001,1001,3001,4001,5001,7001,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,1000,3000,4000,5000,7000,9001,1001,3001,4001,5001,7001,900&display=swap');
 
 
 /* font-family: 'Roboto', sans-serif; */
@@ -224,9 +224,9 @@ html {
     display: inline-block;
 }
 
+
 form {
     margin: 50px auto;
-    width: 600px;
     background-color: $color2;
     padding: 30px;
     border-radius: 10px;
@@ -307,6 +307,7 @@ input[type="reset"] {
     padding: 15px;
     justify-content: center;
     align-content: center;
+    object-fit: cover;
 }
 
 .item {
@@ -416,6 +417,8 @@ input[type="reset"] {
 
 .mapapuertomadryn {
     display: flex;
+    width: 100%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -650,6 +653,24 @@ footer a:hover {
 
 }
 
+form {
+    margin: 50px auto;
+    background-color: $color2;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.InfoContacto {
+    color: $color1;
+}
+
+.InfoBarrancasContacto {
+    text-decoration: none;
+    color: $color1;
+    font-size: 10px;
+}
+
 @media only screen and (min-width:768px) and (max-width:1024px) {
 
     .galeriamadryn {
@@ -727,6 +748,23 @@ footer a:hover {
     }
 }
 
+form {
+    margin: 50px auto;
+    background-color: $color2;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.InfoContacto {
+    color: $color1;
+}
+
+.InfoBarrancasContacto {
+    text-decoration: none;
+    color: $color1;
+    font-size: 15px;
+}
 
 @media only screen and (min-width:1024px) {
     .galeriamadryn {
@@ -799,4 +837,23 @@ footer a:hover {
         padding: 10px;
         text-align: center;
     }
+}
+
+form {
+    margin: 50px auto;
+    background-color: $color2;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.InfoContacto {
+    color: $color1;
+    text-decoration: none;
+}
+
+.InfoBarrancasContacto {
+    text-decoration: none;
+    color: $color1;
+    font-size: 20px;
 }
